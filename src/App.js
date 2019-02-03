@@ -46,6 +46,7 @@ class App extends Component {
         />
         <h1>My First React App [Counter-Increment]</h1>
         <h3>Enjoy Learning</h3>
+        <h6>Stay foolish Stay hungry</h6>
         <main className="container">
           <Counters
             onDelete={this.handleDelete}
