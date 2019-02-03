@@ -3,40 +3,15 @@ import React, { Component } from "react";
 class Counter extends Component {
 	state = {
 		count: this.props.counter.value
-		// tags: ["tag1", "tag2", "tag3", "tag4"]
-		// image: "https://picsum.photos/200"
 	};
 
-	// style = {
-	// 	fontSize: 50,
-	// 	fontWeight: "bold"
-	// };
 
 	render() {
 		console.log("props --- " + this.props);
 		return (
 			<div>
-				{/* <img src={this.state.image} alt="" /> */}
-				{/* <span style={this.style} className="badge badge-primary m-2"> */}
-				{/* <span style={{ fontSize: 50 }} className="badge badge-primary m-2"> */}
-				{/* <span className={this.getBatcgFormatter()}>{this.formatCount()}</span>
-				<button className="btn btn-secondary btn-sm">increment</button>
-				<ul>
-					{this.state.tags.map(tag => (
-						<li key={tag}>{tag}</li>
-					))}
-                </ul> */}
-				{/* {this.state.tags.length === 0 ? "Please add the tag..." : null} */}
-				{/* {this.state.tags.length === 0 && "Please add the tag..."}
-                {this.renderTags()} 
-				{this.props.children}*/}
+				
 				<span className={this.getBatchFormatter()}>{this.formatCount()}</span>
-				{/* <button
-					onClick={this.handleIncrement}
-					className="btn btn-secondary btn-sm"
-				>
-					increment
-                </button> */}
 				<button
 					onClick={() => this.props.onIncrement(this.props.counter)}
 					className="btn btn-secondary btn-sm"
