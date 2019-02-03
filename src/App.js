@@ -45,6 +45,7 @@ class App extends Component {
           totalCounters={this.state.counters.filter(c => c.value > 0).length}
         />
         <h1>My First React App [Counter-Increment]</h1>
+        <h3>Enjoy Learning</h3>
         <main className="container">
           <Counters
             onDelete={this.handleDelete}
